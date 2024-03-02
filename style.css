@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+body {
+  font: 1rem/1.3 "Roboto", sans-serif;
+  background-color: #2e335a;
+  color: white;
+  padding: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ----------SEARCH SECTION---------- */
+
+.search {
+  color: white;
+}
+
+.head {
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.02em;
+  padding: 0 0 30px 0;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#citiesInp {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+#citiesInp::placeholder {
+  color: white;
+}
+
+#subBtn {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: #7b61ff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#subBtn:hover {
+  background-color: palevioletred;
+}
+
+.massage {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+
+/* ----------INFO SECTION---------- */
+
+.info {
+  margin: 50px 0 20px;
+}
+
+.cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.city {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 4%;
+  border-radius: 20px;
+  background-color: palevioletred;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.city:last-child {
+  margin-right: 0;
+}
+
+.city:hover {
+  background-color: #7b61ff;
+}
+
+.info figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  background-color: orange;
+}
+
+.city-icon {
+  margin: 10px auto 0;
+  width: 100px;
+  height: 100px;
+}
